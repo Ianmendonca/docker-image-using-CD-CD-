@@ -50,7 +50,7 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         context: .
-        file: C:\Users\ianme\OneDrive\Desktop\DataScience\DockerCICD\dockerfile
+        file: ./dockerfile
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/flasktest-app:latest
 
